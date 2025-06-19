@@ -1,12 +1,14 @@
-import './App.css'
+import React from 'react';
+import HabitForm from './components/HabitForm';
+import HabitList from './components/HabitList';
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <h1>Hello World!</h1>
-    </>
-  )
+    <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto' }}>
+      <h1>HabitFlow</h1>
+      <HabitForm />
+      <hr />
+      <HabitList />
+    </div>
+  );
 }
-
-export default App
